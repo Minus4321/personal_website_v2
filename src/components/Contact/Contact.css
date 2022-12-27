@@ -1,0 +1,131 @@
+.submit__button {
+  transition: all 90ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit__button:hover {
+  color: white;
+}
+
+.submit__button:active {
+  transform: scale(0.95);
+}
+
+.submit__button-disabled {
+  /* styles for the disabled button */
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Loading, Check Icons */
+.fa-spinner {
+  color: white;
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+}
+
+.fa-check {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 255, 0);
+  padding: 8px;
+}
+
+.message-container {
+  position: relative;
+}
+/* animate? */
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  /* all other inputs */
+  .contactInput {
+    width: 80%;
+    align-self: center;
+  }
+
+  /* side by side inputs */
+  .form {
+    width: 80%;
+    align-self: center;
+  }
+
+  .submit__button {
+    width: 80%;
+    align-self: center;
+  }
+
+  .submit__button-disabled {
+    width: 80%;
+    align-self: center;
+  }
+
+  .contact-info {
+    font-size: rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+  }
+
+  .fa-check {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(0, 255, 0);
+    padding: 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  /* all other inputs */
+  .contactInput {
+    width: 80%;
+    align-self: center;
+  }
+
+  /* side by side inputs */
+  .form {
+    width: 80%;
+    align-self: center;
+  }
+
+  .submit__button {
+    width: 80%;
+    align-self: center;
+  }
+
+  .submit__button-disabled {
+    width: 80%;
+    align-self: center;
+  }
+
+  .contact-info {
+    line-height: 1.5rem; /* 24px */
+  }
+}

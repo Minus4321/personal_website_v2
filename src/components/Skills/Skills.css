@@ -1,0 +1,13 @@
+.subheading {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.heading--1 {
+  color: orange;
+  font-weight: 500;
+}
+
+.container {
+  width: 100%;
+}

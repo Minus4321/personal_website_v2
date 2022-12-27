@@ -1,0 +1,49 @@
+nav {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+/* nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+} */
+
+#personal-logo {
+  width: 85px;
+  height: 85px;
+  filter: invert(1);
+}
+
+/* .nav__link--list {
+  display: flex;
+} */
+
+.nav__link {
+  margin: 0 12px;
+}
+
+.nav__link--anchor {
+  font-size: 16px;
+  color: white;
+  font-weight: 510;
+}
+
+.hero__span {
+  color: orange;
+  /* font-style: oblique; */
+}
+
+@media (max-width: 768px) {
+  #personal-logo {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__link {
+    visibility: hidden;
+  }
+}
